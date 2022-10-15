@@ -1,0 +1,31 @@
+.benefits__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.benefits__visually-hidden{
+    @extend %h2;
+    @extend %visually-hidden;
+}
+
+.benefits__list{
+    padding-top: 94px;
+    display: flex;
+    justify-content: space-between;
+}
+.benefits__item:not(:last-child){
+    margin-right: 30px;
+}
+.benefits__caption{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14px;
+    text-transform: uppercase;
+    color:$header-color;
+}

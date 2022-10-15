@@ -1,0 +1,42 @@
+
+@import "./utils/placeholders";
+@import "./utils/variables";
+@import "./components/page-header";
+@import "./components/logo-header";
+@import "./components/header-navigation";
+@import "./components/header-conact";
+@import "./components/hero-section";
+@import "./components/modal";
+@import "./components/benefits";
+@import "./components/function";
+@import "./components/team.scss";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/portfolio";
+
+
+.list{
+   @extend %list;
+}
+.link{
+    @extend %link;
+}
+.conteiner{
+    @extend %conteiner;
+}
+h1,h2,h3,p{
+    @extend %h1;
+    @extend %h2;
+    @extend %h3;
+    @extend %p;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+
+

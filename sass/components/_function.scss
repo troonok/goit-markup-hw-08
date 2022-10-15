@@ -1,0 +1,38 @@
+.function__caption{
+    text-align: center;
+    padding-top: 94px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color:#212121;
+}
+.function__list {
+    margin-top: 50px;
+    padding-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.function__item{
+    position: relative;
+    img{
+        display: block;
+    }
+}
+.function__label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+   
+}
+.function__text{
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+}
