@@ -6,23 +6,42 @@
     background-color: $accent-background-color;
     max-width: 1600px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+    padding: 118px 60px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // @media screen and (max-width:480px) {
+        
+    //     text-align: center;
+        
+    // }
+    // @media screen and(min-width:481px) and (max-width:768px) {
+        
+        
+    // }
+  }
 .hero__caption{
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    // font-size: 44px;
+    // line-height: 1.36;
+    // letter-spacing: 0.06em;
     text-transform: uppercase;
     color:#ffffff;
+    font-size: 26px;
     margin-bottom: 30px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+   
 }
 .hero__button{
     @extend %button;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: inherit;
+    // padding-left: 32px;
+    // padding-right: 32px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+        font-family: inherit;
+        padding: 10px 24px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
 }

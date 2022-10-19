@@ -1,3 +1,8 @@
+.function{
+    @media screen and (max-width:768px) {
+    display: none;
+    }
+}
 .function__caption{
     text-align: center;
     padding-top: 94px;
@@ -11,6 +16,7 @@
     padding-bottom: 94px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .function__item{

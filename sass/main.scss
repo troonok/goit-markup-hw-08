@@ -23,6 +23,15 @@
 }
 .conteiner{
     @extend %conteiner;
+    @media screen and (max-width:480px) {
+        width: 100%;
+        max-width: 480px;
+       
+    }
+    @media screen and (min-width:481px) and (max-width:768px){
+        width: 100%;
+        max-width: 768px;
+    }
 }
 h1,h2,h3,p{
     @extend %h1;
@@ -35,8 +44,12 @@ body{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-right: auto;
+    margin-left: auto;
+    // width: 1200px;
+    @media screen and (min-width:320px) and (max-width:480px) {
+    margin-right: auto;
+    margin-left: auto;
+    }
 }
-
-
-
 

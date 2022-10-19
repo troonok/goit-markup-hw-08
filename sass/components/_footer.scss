@@ -9,12 +9,31 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    justify-content: space-between;
+    // justify-content: space-between;
+    // align-items:flex-start;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
     .link{
         font-style: normal;
     }
+//     @media screen and(min-width:481px) and (max-width:768px) {
+// flex-direction: column;
+//     }
 }
-
+.footer-block{
+    // display: flex;
+        display: block;
+        align-items: center;
+    // @media screen and(min-width:481px) and (max-width:768px) {
+    //     justify-content: space-around;
+    //     width: 100%;
+    //     text-align: center;
+    //     margin-bottom: 60px;
+       
+// }
+}
 .change-color{
     color:#ffffff;
 }
@@ -23,14 +42,14 @@
 }
 
 .footer-connect{
-    margin-top: -8px;
-    margin-left: 70px;
-    margin-right: 93px;
+   margin-top: 60px;
 }
 .footer-connect__text{
     font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF; 
+    margin-bottom: 20px;
+
 }
 .icon-socials{
     display: flex;
@@ -49,11 +68,25 @@
     margin-right: 10px;
 }
 
-.contact-link{
+.contact-link-footer{
+    display: block;
     margin-top: 9px;
+    @extend %contact-link;
+    text-align: center;
+        align-items: center;
+        display: block;
 }
 .newsletter{
-    margin-top: -8px;
+    width: 100%;
+    margin-top: 60px;
+    // & > *{
+    //     display: block; 
+    // }
+    
+    // @media screen and(min-width:481px) and (max-width:768px) {
+    text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 .newsletter__text{
     margin-bottom: 20px;
@@ -64,12 +97,13 @@
 .newsletter__input{
     background: inherit;
     padding: 15px 15px;
-    width: 358px;
+    // width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: #FFFFFF;
     outline: none;
+    width: 100%;
 }
 .newsletter__input:focus-within{
     border: 1px solid #ffffff;
@@ -90,7 +124,7 @@
 
 .newsletter__button {
     cursor: pointer;
-    margin-left: 12px;
+    // margin-left: 12px;
     padding-top:10px;
     padding-right: 28px;
     padding-bottom: 10px;
@@ -107,6 +141,15 @@
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-top: 20px;
+    // display: block;
+    
+    // @media screen and(min-width:481px) and (max-width:768px) {
+    //     margin-left: 0px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-top: 20px;
+    // }
 }
 .newsletter__icon{
     display: inline-block;

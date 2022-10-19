@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -21,27 +21,30 @@
     <header class="header">
         <div class="conteiner header__wrap">
             <a class="logo-link link" href="/" lang="en"><span class="accent">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="list navigation__list">
-                    <li class="navigation__item"><a class="link current" href="/">Студія</a></li>
-                    <li class="navigation__item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="navigation__item"><a class="link" href="">Контакти</a></li>
+            <div class="menu-wrap">
+                <nav class="navigation">
+                    <ul class="list navigation__list">
+                        <li class="navigation__item"><a class="link current" href="/">Студія</a></li>
+                        <li class="navigation__item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="navigation__item"><a class="link" href="">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="list contact-list">
+                    <li class="contact-item"><a class="contact-link link" href="mailto:info@devstudio.com">
+                            <svg class="contact-icon" width="16" height="12">
+                                <use href="./images/icon.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contact-item"><a class="contact-link link" href="tel:+380961111111">
+                            <svg class="contact-icon" width="10" height="16">
+                                <use href="./images/icon.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="list contact-list">
-                <li class="contact-item"><a class="contact-link link" href="mailto:info@devstudio.com">
-                        <svg class="contact-icon" width="16" height="12">
-                            <use href="./images/icon.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="contact-item"><a class="contact-link link" href="tel:+380961111111">
-                        <svg class="contact-icon" width="10" height="16">
-                            <use href="./images/icon.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
+            
         </div>
     </header>
     <main>
@@ -98,9 +101,11 @@
                                 <div class="checkbox">
                                     <label class="form-field__label checkbox__label">
                                         <input class="checkbox__input" type="checkbox" name="agree-check">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text-agreement">Погоджуюся з розсилкою та приймаю <a
+                                        <p class="checkbox-text">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text-agreement">Погоджуюся з розсилкою та приймаю <a
                                                 class="checkbox__link-agreement link" href="#">Умови договору</a></span>
+                                        </p>
                                     </label>
                                 </div>
                             </div>
@@ -144,7 +149,7 @@
                         <h3 class="benefits__caption">ПЛАНУВАННЯ</h3>
                         <p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li >
+                    <li class="benefits__item">
                         <div class="benefits__icons">
                             <svg class="benefits__icon" width="70" height="70">
                                 <use href="./images/icon.svg#icon-astronaut"></use>
@@ -379,7 +384,8 @@
     </main>
     <footer class="footer">
         <div class="conteiner footer-conteiner">
-            <div class="address-link">
+            <div class="footer-block">
+               <div class="link-wrap address-link">
                 <a class="logo-link link" href="/" lang="en"><span class="accent">Web</span><span
                         class="change-color">Studio</span></a>
                 <address>
@@ -389,14 +395,14 @@
                                 rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26
                             </a>
                         </li>
-                        <li class="contact"><a class="link contact-link"
+                        <li class="contact"><a class="link contact-link-footer"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="contact"><a class="link contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="contact"><a class="link contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-connect">
+            <div class="link-wrap footer-connect">
                 <p class="footer-connect__text">приєднуйтесь</p>
                 <ul class="list icon-socials">
                     <li class="icon-socials__item">
@@ -428,7 +434,9 @@
                         </a>
                     </li>
                 </ul>
+            </div> 
             </div>
+            
             <div class="newsletter">
                 <p class="newsletter__text">
                     Підпишіться на розсилку
