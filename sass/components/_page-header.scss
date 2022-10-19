@@ -4,30 +4,30 @@
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:767px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
         .menu-wrap{
             display: none;
         }
         }
-    // @media screen and (min-width:769px) and (max-width:1200px){
-    //     align-items: baseline;
-    //     justify-content: space-between;
-    //     max-width: 768px;
-    //     width: calc(100% - 2*15px);
-    // }
-    
-    
+        @media screen and (min-width:768px) and (max-width:1200px){
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+        .menu-wrap{
+            display: flex;
+         }
+     } 
 }
 .menu-wrap{
     display: flex;
     align-items: center;
-    width: 100%;
-    // @media screen and (min-width:330px) and (max-width:768px){
-    //     justify-content: space-between;
-    //    max-width: 768px;
-    // }
+    
+    @media screen and (min-width:768px) and (max-width:1199px){
+       justify-content: space-between;
+       width: 100%;
+     }
 }
 
 
