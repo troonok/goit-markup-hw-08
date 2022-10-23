@@ -1,34 +1,89 @@
+
 .header__wrap{
-    display: flex;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ECECEC;
-    align-items: center;
         @media screen and (max-width:767px) {
+            width: 100%;
             padding-top: 16px;
             padding-bottom: 16px;
+           position: relative;
+           display: flex;
         .menu-wrap{
-            display: none;
+            overflow-y:scroll;
+            position: fixed;
+            background-color: #ffffff;
+            top:0;
+            left:0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+            padding: 48px 40px;
+            z-index: 999;
+            transform: translateX(100%);
+            font-size: 7vw;
+            transition: $transition-option;
+            &.is-open{
+               transform: translateX(0%); 
+            }
         }
-        }
-        @media screen and (min-width:768px) and (max-width:1200px){
+    }
+        @media screen and (min-width:768px){
+            display: flex;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #ECECEC;
+            align-items: center;
             align-items: center;
             justify-content: space-between;
-            max-width: 1200px;
         .menu-wrap{
             display: flex;
          }
      } 
 }
 .menu-wrap{
+    position:relative;
     display: flex;
-    align-items: center;
-    
-    @media screen and (min-width:768px) and (max-width:1199px){
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width:768px){
        justify-content: space-between;
        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
      }
 }
-
-
-
+.close-button-mobile
+{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+    right:10px;
+    border: none;
+    background: #ffffff;
+    transform: $transition-option;
+        &:hover .close-icon-mobile{
+        fill:$accent-color;
+}
+@media screen and (min-width:768px) {
+    display: none;
+  }
+}
+.menu-mobile-button{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    border: none;
+    background: #ffffff;
+        .menu-mobile-icon{
+            fill:#000000; 
+        }
+        &:hover .menu-mobile-icon{
+        fill:$accent-color;
+}
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}

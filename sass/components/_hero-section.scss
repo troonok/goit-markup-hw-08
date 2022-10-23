@@ -7,23 +7,14 @@
     max-width: 1600px;
     text-align: center;
     padding: 118px 60px;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-    // @media screen and (max-width:480px) {
-        
-    //     text-align: center;
-        
-    // }
-    // @media screen and(min-width:481px) and (max-width:768px) {
-        
-        
-    // }
+    @media screen and (min-width:1200px){
+       padding-top: 200px;
+       padding-bottom: 200px; 
+    }
   }
 .hero__caption{
     font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // letter-spacing: 0.06em;
+  
     text-transform: uppercase;
     color:#ffffff;
     font-size: 26px;
@@ -31,16 +22,23 @@
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em; 
+    }
 }
 .hero__button{
     @extend %button;
-    // padding-left: 32px;
-    // padding-right: 32px;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
         font-family: inherit;
         padding: 10px 24px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        @media screen and (min-width:1200px) {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 10px;
+            padding-bottom: 10px;  
+        }
 }

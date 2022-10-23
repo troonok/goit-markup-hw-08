@@ -1,13 +1,16 @@
 .contact-list{
-    margin-left: auto;
-    display: flex;
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
     @media screen and (min-width:768px) and (max-width:1199px){
-       flex-direction: column;
-       margin-top: -10px;
-       
+        display: flex;  
+        flex-direction: column;
+        margin-top: -10px;
+        margin-left: auto;
+       }
+       @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
        }
     }
 .contact-item{
@@ -22,17 +25,73 @@
     fill:$accent-color;
     transition: $transition-option;
  }
-//   .contact-item:not(:last-child){
-    // @media screen and (min-width:768px) {
-    //      margin-right: 50px;
-    // } 
-//  }
+  .contact-item:not(:last-child){
+    @media screen and (max-width:767px) {
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;
+    } 
+  }
  
  .contact-link{
     @extend %contact-link;
+    @media screen and (max-width:767px){
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }
 }
 .contact-icon{
-    margin-right: 10px;
+    @media screen and (max-width:767px) {
+       display: none; 
+    }
+    
+    @media screen and (min-width:768px) {
+      margin-right: 10px;  
+    }
+    
+}
+.contacts-menu{
+    display: block;
+    text-align: left;
+}
+.social-contact-list{
+    display: flex;
+    justify-content: left;   
+    font-weight: 500;
+    font-size: 3.8vw;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    margin:-10px;
+    margin-top: 64px;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.social-contact_item{
+    width:calc(100% - 8*10px);
+    padding:0px 10px;
+    width: 100%;
+    &:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+.social-contact_link{
+    color: $accent-color;
+}
+.active-link{
+    @media screen and (max-width:767px) {
+font-weight: 500;
+// font-size: 34px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: $accent-color;
+
+    }
 }
 
 
