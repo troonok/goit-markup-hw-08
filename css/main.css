@@ -35,7 +35,7 @@ h1, h2, h3, p, .benefits__visually-hidden, .opposite-text {
   overflow: hidden;
 }
 
-.modal__complite-button, .hero__button {
+.modal__complite-button, .hero .hero__button {
   background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -413,24 +413,53 @@ h1, h2, h3, p, .benefits__visually-hidden, .opposite-text {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/hero-background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero-background.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/hero_mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero_mobile.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
   margin: auto;
   background-color: #2F303A;
-  max-width: 1600px;
   text-align: center;
   padding: 118px 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(./../../images/hero_mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/hero_tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero_tablet.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/Hero_tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/Hero_tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/hero_deskop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero_deskop.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../../images/hero_deskop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero_deskop@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
-
-.hero__caption {
+.hero .hero__caption {
   font-weight: 900;
   text-transform: uppercase;
   color: #ffffff;
@@ -441,14 +470,13 @@ h1, h2, h3, p, .benefits__visually-hidden, .opposite-text {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .hero__caption {
+  .hero .hero__caption {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
   }
 }
-
-.hero__button {
+.hero .hero__button {
   font-family: inherit;
   padding: 10px 24px;
   text-align: center;
@@ -456,7 +484,7 @@ h1, h2, h3, p, .benefits__visually-hidden, .opposite-text {
   margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
-  .hero__button {
+  .hero .hero__button {
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 10px;
