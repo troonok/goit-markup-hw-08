@@ -685,7 +685,7 @@ h1, h2, h3, p, .benefits__visually-hidden, .opposite-text {
 }
 .modal .checkbox__input:checked ~ .checkbox__icon {
   background-color: #2196F3;
-  background-image: url(../../images/icon_check.svg);
+  background-image: url(./images/icon_check.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: #2196F3;
