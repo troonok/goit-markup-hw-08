@@ -1,5 +1,5 @@
 .hero{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero_mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(./../../images/hero_mobile.jpg);
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;   
@@ -10,25 +10,23 @@
     @media screen and (min-device-pixel-ratio:2),
         (-webkit-min-device-pixel-ratio:2),
         screen and (min-resolution:2dppx){
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))url(../../images/hero_mobile@2x.jpg);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))url(./../../images/hero_mobile@2x.jpg);
     }
     @media screen and (min-width:481px){
         
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero_tablet.jpg);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(./../../images/hero_tablet.jpg);
         
         @media screen and (min-device-pixel-ratio:2),
         (-webkit-min-device-pixel-ratio:2){
-                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/Hero_tablet@2x.jpg);
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(./../../images/Hero_tablet@2x.jpg);
         }
     
     @media screen and (min-width:769px) {
-        
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero_deskop.jpg);
-        
         @media screen and (min-device-pixel-ratio:2),
         (-webkit-min-device-pixel-ratio:2){
             
-                background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_deskop@2x.jpg);
+                background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero_deskop@2x.jpg);
             
         }
     }
